@@ -4,7 +4,7 @@ MultiTail is an open source ncurses utility that can be used to display multiple
 
 ## Preface
 
-Multitail comes with several predefined color highlighting schemas, such as for Apache and Postfix and many more daemons. Because no schema is provided for fetchmail, I created a schema able for colorized fetchmail log, i.e. /var/log/fetchmail
+Multitail comes with several predefined color highlighting schemas, such as for Apache and Postfix and many more daemons. Because no schema is provided for fetchmail, I created a schema able for colorized /var/log/fetchmail.
 
 ## Purpose
 
@@ -12,4 +12,12 @@ Add the lines to your multitail.conf at the end.
 
 ## Usage:
 
+Follow the fetchmail protocol with launch multitail as follows.
+
 `$ multitail -cS fetchmail /var/log/fetchmail`
+
+## Requirement
+
+If the package is not yet installed on yor machine, multitail can be deployed on Debian and branches as follows.
+
+`$ sudo apt install fetchmail`
